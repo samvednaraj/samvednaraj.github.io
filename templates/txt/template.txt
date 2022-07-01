@@ -1,0 +1,34 @@
+Hr tag:
+
+<hr color=black width="10%" size=".5px" />
+
+Box-shadow:
+box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.408);
+            x   y  blur spread  color
+
+
+G-Drive image embedding: 
+<a href="https://drive.google.com/uc?export=view&id=xxxxxxxxxxxxxx">
+<img src="https://drive.google.com/uc?export=view&id=xxxxxxxxxxxxxx"
+style="width: 500px; max-width: 100%; height: auto"
+title="Click for the larger version." />
+
+
+Header Background with Linear gradient above: linear-gradient(rgba(0, 0, 0, 0.775) 0%, rgba(0, 0, 0, 0) 50%),  url(../images/main/Cover\ big\ web\ 50.jpg);
+
+
+Javascripts:
+
+Font Asesome: 
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+e query: <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.9.2/EQCSS.min.js" integrity="sha512-yfw7F0e6Vqdxeg6nDlK4l4+pyBvwozVA61StkFRHcwW2dTAIRa4rfmvi4xXmcRmcnq4NI3jbOY4B8cc25n5SkA=="  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src=EQCSS.js></script>
+
+
+Short hand: 
+font: style variant weight size/line-height family;
+font: normal normal normal 18px/1.5 'Montserrat', sans-serif;

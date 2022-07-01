@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 80px;
+    z-index: 12;
+}
+nav .logo img{
+    width: 50px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    letter-spacing: 1.3px;
+    padding: 8px 10px;
+    border-radius: 5px;
+
+}
+nav ul li a:hover{
+    color: rgb(110, 14, 14);
+    transition: all .3s ease;
+}
+#click{
+    display: none;
+}
+label{display: none;}
+@media (max-width:940px) {
+    label{display: block;}
+    nav .menubtn i{
+        display: block;
+    }
+    nav .menubtn i{
+    color: white;
+    font-size: 30px;
+    }
+    #click:checked ~ .menubtn i:before{
+        content: "\f00d"
+    }
+    nav ul{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.97) 0%, rgba(0, 0, 0, 0.99) 100%);
+        height: 70vh;
+        width: 100%;
+        display: block;
+        padding: 5%;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+    #click:checked ~ ul{
+        top: 80px;
+    }
+    nav ul li{
+        margin: 40px 0px;
+        
+    } 
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }         
+}
+@media (max-width:520px){
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+        display:inline-table;
+        height: 120px;
+        padding: 0 0;
+        text-align: center;
+        line-height: 1.85;
+    }
+    nav ul{
+        top: -100%;  
+    }
+    #click:checked ~ ul{
+        top: 120px;
+    }
+    #click:checked ~ nav {
+        background-color: black;
+    }
+    }
